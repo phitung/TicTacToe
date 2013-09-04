@@ -1,0 +1,3 @@
+acme_tic_tac_toe_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: AcmeTicTacToeBundle:Default:index }

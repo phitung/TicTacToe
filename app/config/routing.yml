@@ -1,0 +1,5 @@
+acme_tic_tac_toe:
+    resource: "@AcmeTicTacToeBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

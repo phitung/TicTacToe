@@ -1,0 +1,7 @@
+parameters:
+#    acme_tic_tac_toe.example.class: Acme\TicTacToeBundle\Example
+
+services:
+#    acme_tic_tac_toe.example:
+#        class: %acme_tic_tac_toe.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

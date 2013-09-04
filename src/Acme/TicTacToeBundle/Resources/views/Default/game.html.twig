@@ -1,0 +1,38 @@
+ {% extends '::base.html.twig' %}
+
+ {% block body %}
+	{% javascripts '@AcmeTicTacToeBundle/Resources/public/js/*' %}
+	    <script type="text/javascript" src="{{ asset_url }}"></script>
+	{% endjavascripts %}
+	{% stylesheets '@AcmeTicTacToeBundle/Resources/public/css/*' filter='cssrewrite' %}
+	    <link rel="stylesheet" href="{{ asset_url }}" />
+	{% endstylesheets %}
+	
+ 	<div class="center">
+ 		{{name}} vs. Computer 
+	</div>
+	<div id="restart">
+		Restart Game
+	</div>
+	<table align="center" >
+		<tr id="r0">
+			<td class="t0"></td>
+			<td class="t1"></td>
+			<td class="t2"></td>
+		</tr>
+		<tr id="r1">
+			<td class="t0"></td>
+			<td class="t1"></td>
+			<td class="t2"></td>
+		</tr>
+		<tr id="r2">
+			<td class="t0"></td>
+			<td class="t1"></td>
+			<td class="t2"></td>
+		</tr>
+	</table>
+
+	 <script type="text/javascript">
+	 	var player1 = '{{name}}';
+	 </script>
+{% endblock %}

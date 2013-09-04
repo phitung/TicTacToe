@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  		<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+ 
+    </head>
+    <body>
+	    <div id="wrap">
+	  		<div class="navbar-wrapper">
+			     <div class="container-fluid">
+			      <div class="container" >
+				      <div class="row-fluid" id="header">
+				      	<div class="span12">
+				      		<br /><br />
+					  			<h1 class=""><center>Tic Tac Toe </center></h1>
+					  		<br /><br />
+					  	</div>
+				      </div>
+				    </div> 
+				   </div>
+	   		 </div>
+			<div class="container">  
+				<div class="span6 offset3">		    
+	       			{% block body %}{% endblock %}
+	        	</div>
+	        </div>
+	        </div>
+        <div id="footer">
+      <div class="container">
+        <div class="row-fluid">
+        		<center>
+        			Copyright Phi LE 
+        		</center>
+        	</div>
+        </div>
+      </div>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
